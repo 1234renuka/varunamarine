@@ -47,6 +47,7 @@ frontend/
  │   └── infrastructure/    → API client (outbound)
 
 
+
 🧩 Clean separation ensures testing, replacing, or extending layers is seamless.
 
 ⚙️ Backend Setup
