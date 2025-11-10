@@ -1,9 +1,9 @@
-🚢💡 FuelEU Maritime Compliance Suite
+🌐✨ FuelEU Maritime Compliance Suite
 
-Smart. Modular. Compliant.
-A next-generation platform that transforms FuelEU Maritime compliance into a data-driven, interactive experience — powered by Clean Architecture principles and modern web technologies.
+🧭 Smart · Modular · Compliant
+A next-generation platform transforming FuelEU Maritime compliance into a data-driven, interactive experience — built on Clean Architecture and modern web technology.
 
-🧭 Tech Blueprint
+⚙️ Tech Blueprint
 Layer	Stack
 🎨 Frontend	React · TypeScript · TailwindCSS · Vite
 ⚙️ Backend	Node.js · Express · PostgreSQL · TypeScript
@@ -12,11 +12,11 @@ Layer	Stack
 📚 Docs	AGENT_WORKFLOW.md · REFLECTION.md
 🌊 What It Does
 
-FuelEU Maritime Compliance Suite brings together regulation data, vessel insights, and energy efficiency metrics into one powerful dashboard.
+FuelEU Maritime Compliance Suite unites regulation data, vessel insights, and energy efficiency metrics into a single elegant dashboard.
 
-It enables you to:
+✨ Key Capabilities
 
-🗺️ Map & analyze routes
+🗺️ Map & analyze maritime routes
 
 📊 Compare compliance performance
 
@@ -26,13 +26,12 @@ It enables you to:
 
 💡 Visualize fuel efficiency impact
 
-Designed with clarity, modularity, and domain-driven thinking at its core.
+Designed with clarity, modularity, and domain-driven logic at its heart.
 
 🗂️ Project Structure
 📁 Backend
 
-Structure Overview:
-Handles business logic, database connections, and Express-based APIs — built using hexagonal architecture.
+🧱 Built with a Hexagonal Architecture, ensuring testability and clean separation of concerns.
 
 core/ → 🧠 Domain entities & logic
 
@@ -48,7 +47,7 @@ outbound/postgres/ → 🐘 PostgreSQL repositories
 
 infrastructure/
 
-db/ → 🧩 Migration & seed
+db/ → 🧩 Migrations & seed data
 
 server/ → 🚀 Composition root
 
@@ -56,8 +55,7 @@ shared/ → 🧭 Common constants & utilities
 
 💻 Frontend
 
-Structure Overview:
-Built with React, Vite, and TailwindCSS, providing a responsive dashboard that visualizes compliance insights.
+💅 Powered by React, TailwindCSS, and Vite, delivering a fast, responsive UI for compliance analytics.
 
 core/ → 🧠 Pure domain types
 
@@ -67,52 +65,53 @@ ui/ → 🎨 Pages & components (inbound)
 
 infrastructure/ → 🔗 API client (outbound)
 
-🧩 Clean separation ensures testing, replacing, or extending layers is seamless.
+🧩 Clean separation ensures testing, replacing, or extending layers remains effortless.
 
+🧰 Setup Guide
 ⚙️ Backend Setup
 
-Step 1 – Configure Environment
+1️⃣ Configure Environment
 
 cd backend
 cp .env.example .env
 
 
-Fill in your DATABASE_URL and PORT.
+➡️ Update DATABASE_URL and PORT.
 
-Step 2 – Install Dependencies
+2️⃣ Install Dependencies
 
 npm install
 
 
-Step 3 – Run Migrations & Seed
+3️⃣ Run Migration & Seed
 
 npm run migrate
 npm run seed
 
 
-Step 4 – Start Backend
+4️⃣ Start the Server
 
 npm run dev
 
 
-➡️ Runs at http://localhost:3001
+🚀 Runs at http://localhost:3001
 
 💻 Frontend Setup
 
-Step 1 – Install Packages
+1️⃣ Install Dependencies
 
 cd frontend
 npm install
 
 
-Step 2 – Start Vite Dev Server
+2️⃣ Launch Development Server
 
 npm run dev
 
 
-➡️ Runs at http://localhost:5173
+🌍 Runs at http://localhost:5173
 
-⚡ The frontend automatically proxies all API requests to the backend.
+⚡ Vite automatically proxies API requests to the backend.
 
 🔗 Core API Endpoints
 Method	Endpoint	Description
@@ -126,15 +125,15 @@ POST	/banking/bank	Bank positive CB
 POST	/banking/apply	Apply banked CB
 POST	/pools	Create and validate a pool
 
-🧮 Formula Used:
+🧮 Formula Used
 CB = (Target(89.3368) − Actual) × (FuelConsumption × 41,000 MJ/t)
 
-🧪 Testing
+🧪 Testing Suite
 cd backend
 npm test
 
 
-Includes:
+🧩 Covers:
 
 ComputeCB
 
@@ -146,9 +145,9 @@ ApplyBanked
 
 CreatePool
 
-✅ Tests run in-memory, no external DB required.
+✅ In-memory tests — no external DB required.
 
-🎨 Dashboard Highlights
+🖼️ Dashboard Highlights
 🗺️ Routes
 
 Explore all registered routes and set a baseline.
@@ -156,35 +155,35 @@ Explore all registered routes and set a baseline.
 
 📊 Compare
 
-Visually compare energy efficiency and compliance metrics.
+Visualize performance differences & efficiency metrics.
 <img src="docs/screenshots/Compare.png" width="750"/>
 
 🏦 Banking
 
-Track compliance balance and manage surplus banking.
+Manage your compliance balance & surpluses.
 <img src="docs/screenshots/Banking.png" width="750"/>
 
 🤝 Pooling
 
-Form compliance pools and validate group performance.
+Collaboratively balance compliance across fleets.
 <img src="docs/screenshots/Pooling.png" width="750"/>
 
-🧰 Developer Notes
+💼 Developer Notes
 
 ✅ TypeScript strict mode enabled
 
 🧹 ESLint + Prettier ready
 
-🐘 PostgreSQL handled via pg
+🐘 PostgreSQL via pg
 
-🧱 Decoupled, domain-driven, framework-agnostic design
+🧱 Decoupled, domain-driven, and framework-agnostic design
 
 🌟 Why It Stands Out
 
-✨ Architected for change — Easily swap adapters, UI, or databases
-⚡ Performance-focused — Vite + Tailwind = blazing-fast frontend
-🧠 Domain-first — Business logic independent of frameworks
-🔍 Testable — Core logic runs without a database
+✨ Architected for change — easily swap adapters, UI, or databases
+⚡ Performance-first — Vite + Tailwind = lightning-fast UI
+🧠 Domain-driven — business logic isolated from frameworks
+🔍 Testable — core logic runs standalone
 
 🚀 Built for the Future of Maritime Compliance
 
