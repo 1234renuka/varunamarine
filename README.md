@@ -13,6 +13,7 @@ Layer	Stack
 🌊 What It Does
 
 FuelEU Maritime Compliance Suite brings together regulation data, vessel insights, and energy efficiency metrics into one powerful dashboard.
+
 It enables you to:
 
 🗺️ Map & analyze routes
@@ -28,31 +29,49 @@ It enables you to:
 Designed with clarity, modularity, and domain-driven thinking at its core.
 
 🗂️ Project Structure
-backend/
- ├── core/                  → Domain entities & logic
- ├── application/           → Business rules (use-cases)
- ├── ports/                 → Interfaces for adapters
- ├── adapters/
- │   ├── inbound/http/      → Express controllers
- │   └── outbound/postgres/ → PostgreSQL repositories
- ├── infrastructure/
- │   ├── db/                → Migration & seed
- │   └── server/            → Composition root
- └── shared/                → Common constants/utilities
+📁 Backend
 
-frontend/
- ├── core/                  → Pure domain types
- ├── adapters/
- │   ├── ui/                → Pages & components (inbound)
- │   └── infrastructure/    → API client (outbound)
+Structure Overview:
+Handles business logic, database connections, and Express-based APIs — built using hexagonal architecture.
 
+core/ → 🧠 Domain entities & logic
 
+application/ → ⚙️ Business rules (use-cases)
+
+ports/ → 🔌 Interfaces for adapters
+
+adapters/
+
+inbound/http/ → 🌐 Express controllers
+
+outbound/postgres/ → 🐘 PostgreSQL repositories
+
+infrastructure/
+
+db/ → 🧩 Migration & seed
+
+server/ → 🚀 Composition root
+
+shared/ → 🧭 Common constants & utilities
+
+💻 Frontend
+
+Structure Overview:
+Built with React, Vite, and TailwindCSS, providing a responsive dashboard that visualizes compliance insights.
+
+core/ → 🧠 Pure domain types
+
+adapters/
+
+ui/ → 🎨 Pages & components (inbound)
+
+infrastructure/ → 🔗 API client (outbound)
 
 🧩 Clean separation ensures testing, replacing, or extending layers is seamless.
 
 ⚙️ Backend Setup
 
-Configure your environment:
+Step 1 – Configure Environment
 
 cd backend
 cp .env.example .env
@@ -60,40 +79,40 @@ cp .env.example .env
 
 Fill in your DATABASE_URL and PORT.
 
-Install dependencies:
+Step 2 – Install Dependencies
 
 npm install
 
 
-Run database migration and seed:
+Step 3 – Run Migrations & Seed
 
 npm run migrate
 npm run seed
 
 
-Start backend:
+Step 4 – Start Backend
 
 npm run dev
 
 
-→ Server runs at http://localhost:3001
+➡️ Runs at http://localhost:3001
 
 💻 Frontend Setup
 
-Install packages:
+Step 1 – Install Packages
 
 cd frontend
 npm install
 
 
-Start Vite dev server:
+Step 2 – Start Vite Dev Server
 
 npm run dev
 
 
-→ Dashboard runs at http://localhost:5173
+➡️ Runs at http://localhost:5173
 
-⚡ The frontend automatically proxies all API requests to your backend.
+⚡ The frontend automatically proxies all API requests to the backend.
 
 🔗 Core API Endpoints
 Method	Endpoint	Description
@@ -115,7 +134,7 @@ cd backend
 npm test
 
 
-🧩 Includes:
+Includes:
 
 ComputeCB
 
@@ -153,14 +172,17 @@ Form compliance pools and validate group performance.
 🧰 Developer Notes
 
 ✅ TypeScript strict mode enabled
+
 🧹 ESLint + Prettier ready
+
 🐘 PostgreSQL handled via pg
+
 🧱 Decoupled, domain-driven, framework-agnostic design
 
 🌟 Why It Stands Out
 
 ✨ Architected for change — Easily swap adapters, UI, or databases
-⚡ Performance-focused — Vite + Tailwind = blazing fast frontend
+⚡ Performance-focused — Vite + Tailwind = blazing-fast frontend
 🧠 Domain-first — Business logic independent of frameworks
 🔍 Testable — Core logic runs without a database
 
@@ -168,4 +190,4 @@ Form compliance pools and validate group performance.
 
 Sail beyond regulations — with structure, precision, and innovation.
 
-🛞 FuelEU Maritime Compliance Suite — where Clean Architecture meets the open sea.
+🛞 FuelEU Maritime Compliance Suite — Where Clean Architecture meets the open sea.
