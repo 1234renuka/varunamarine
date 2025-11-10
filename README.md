@@ -126,7 +126,7 @@ ApplyBanked
 
 CreatePool
 
-Tests run in-memory, no external DB required.
+✅ Tests run in-memory, no external DB required.
 
 🎨 Dashboard Highlights
 🗺️ Routes
@@ -152,11 +152,8 @@ Form compliance pools and validate group performance.
 🧰 Developer Notes
 
 ✅ TypeScript strict mode enabled
-
 🧹 ESLint + Prettier ready
-
 🐘 PostgreSQL handled via pg
-
 🧱 Decoupled, domain-driven, framework-agnostic design
 
 🌟 Why It Stands Out
